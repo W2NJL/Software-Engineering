@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="radioland4.ShowRadio" Title="View Radio Station">
+    <ContentView>
+        
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+
+            
+            <Label Grid.Row ="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Radio Station Details" />
+            <Label Grid.Row ="1" Grid.Column="1" Text="Call Letters" />
+            <Label Grid.Row="1" Grid.Column="2" Text ="{Binding Calls}" />
+            <Label Grid.Row ="2" Grid.Column="1" Text="Frequency" />
+            <Label Grid.Row="2" Grid.Column="2" Text ="{Binding Freq}"/>
+            <Label Grid.Row ="3" Grid.Column="1" Text="City" />
+            <Label Grid.Row="3" Grid.Column="2" Text ="{Binding City}"/>
+            <Label Grid.Row ="4" Grid.Column="1" Text="State" />
+            <Label Grid.Row="4" Grid.Column="2" Text ="{Binding State}"/>
+            <Label Grid.Row ="5" Grid.Column="1" Text="Format" />
+            <Label Grid.Row="5" Grid.Column="2" Text ="{Binding Format}" />
+            <Label Grid.Row ="6" Grid.Column="1" Text="Slogan" />
+            <Label Grid.Row="6" Grid.Column="2" Text ="{Binding Slogan}" />
+            <Label Grid.Row ="7" Grid.Column="1" Text="Power (watts)" />
+            <Label Grid.Row="7" Grid.Column="2" Text ="{Binding Power}" />
+            <Image Grid.Row="8" Grid.Column="1" Grid.RowSpan="4" Aspect="AspectFit" x:Name="stationimage" />
+            
+          
+        </Grid>
+        
+        
+    </ContentView>
+</ContentPage>  
